@@ -1,0 +1,23 @@
+{% load static %}
+
+<html>
+    <body>
+        
+<h1>Hello</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="number" name="a1" value="{{ val1 }}" id="">
+    <input type="number" name="a2" value="{{ val2 }}" id="">
+    <br>
+    <input type="submit" name="" value="Submit" id="">
+
+</form>
+
+<h1>
+    Answer is: {{ ans }}
+</h1>
+
+
+</body>
+</html>
