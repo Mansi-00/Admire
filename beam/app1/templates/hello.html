@@ -1,20 +1,20 @@
 {% load static %}
 
 <html>
-    <body>
+    <body style="background-color: darkseagreen;">
         
-<h1>Hello</h1>
+<h1 style="color: darkmagenta;">Hello</h1>
 
 <form action="" method="POST">
     {% csrf_token %}
-    <input type="number" name="a1" value="{{ val1 }}" id="">
-    <input type="number" name="a2" value="{{ val2 }}" id="">
+    <input type="number" name="a1" value="{{ val1 }}" id="" style="color: darkslategrey; background-color: rgb(69, 126, 69);">
+    <input type="number" name="a2" value="{{ val2 }}" id="" style="background-color: rgb(69, 126, 69);">
     <br>
-    <input type="submit" name="" value="Submit" id="">
+    <input type="submit" name="" value="Submit" id="" style="color: hotpink;">
 
 </form>
 
-<h1>
+<h1 style="color: indianred; background-color:lemonchiffon">
     Answer is: {{ ans }}
 </h1>
 

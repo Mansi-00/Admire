@@ -19,5 +19,10 @@ def view(request):
         
     return render(request, 'hello.html')
 
+
 def index(request):
     return render(request, 'index.html')
+
+
+def common(request):
+    return render(request, 'common.html')
